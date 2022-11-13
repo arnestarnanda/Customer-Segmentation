@@ -2,10 +2,11 @@
 # Use Case
 #### Use Case Summary
 #### Objective Statement:
-* To find out the total amount of income in each year
-* To find out how much the difference in the total amount of income/revenue per month in each year.
-* To know how to optimize marketing strategies to the right customers to generate more revenue 
-* Get customer segmentation using RFM model.
+* To know the grand total per month and in each year.
+* To know the grand total per month in each year and month with the highest and lowest grand total in each year.
+* To know the comparison of the grand total between each year and find month with the most significant decrease and increase in each year.
+* To get customer segmentation using RFM model.
+* To know how to optimize marketing strategies to the right customers to generate more revenue.
 
 #### Challenges:
 * Large size of dataset
@@ -23,19 +24,21 @@
 * Marketing Strategy Right on Target
 
 #### Expected Outcome:
-* Know how many the total amount of revenue in each year
-* Know how many the difference in the total amount of revenue per month in each year.
-* Ability to optimize marketing strategies to the right customers to generate more revenue 
+* Know the grand total in each year
+* Know the grand total per month in each year and month with the highest and lowest grand total in each year.
+* Know the comparison of the grand total between each year and know month with the most significant decrease and increase in each year.
 * Get customer segmentation using RFM model.
+* Know how to optimize marketing strategies to the right customers to generate more revenue.
 
 # Business Understanding
 Retail is the process of selling consumer goods or services to customers through multiple channels of distribution to earn a profit.
 <br>
 This case requires data-driven answers to the following questions:
-* How much is the total amount of income/revenue in each year ?
-* How much is the difference in the total amount of income/revenue per month in each year?
-* How to make the ability to optimize marketing strategies to the right customers to generate more revenue ?
-* How to get customer segmentation using RFM model ?
+* How much is the grand total in each year?
+* How much is the grand total per month in each year and which month has the highest and lowest grand total in each year?
+* How is the comparison of the grand total between each year and which month has the most significant decrease and increase in each year?
+* How is the customer segmentation using RFM model?
+* How to optimize marketing strategies to the right customers to generate more revenue?
 
 # Data Understanding
 * Data of a retail transaction from 04 January 2011 to 31 December 2014
@@ -89,11 +92,11 @@ The graph above shows that in **2014 almost dominated the highest total income e
 ### RFM Analysis
 RFM analysis is basically scoring our customers based on their Recency, Frequency and Monetary values.
 <br>
-Recency : How long it’s been since a customer bought something from us.
+**Recency** : How long it’s been since a customer bought something from us.
 <br>
-Frequency : How often a customer buys from us.
+**Frequency** : How often a customer buys from us.
 <br>
-Monetary : The total value of purchases a customer has made
+**Monetary** : The total value of purchases a customer has made
 
 # Modeling Data : RFM Quantiles
 To score each column of Recency, Frequency and Monetary, we determine a score range from numbers 1 to 4, where the highest score is 1 and the lowest score is 4. For example:
@@ -106,12 +109,12 @@ In **Monetary**, if it has a score of 1, the total expenses incurred by the cust
 
 # Label
 Based on the RFM data the customer is labeled into 6 parts. for details:
-* If the RFM_Segment is 111 then the customer labeled as Best Customers.
-* If the F_quartile is 1 then the customer labeled as Loyal Customers.
-* If the M_quartile is 1 then the customer labeled as Big Spenders.
-* If the RFM_Segment is 134 then the customer labeled as Almost Lost.
-* If the RFM_Segment is 344 then the customer labeled as Lost Customers.
-* If the RFM_Segment is 444 then the customer labeled as Lost Cheap Customers.
+* If the RFM_Segment is 111 then the customer labeled as **Best Customers**.
+* If the F_quartile is 1 then the customer labeled as **Loyal Customers**.
+* If the M_quartile is 1 then the customer labeled as **Big Spenders**.
+* If the RFM_Segment is 134 then the customer labeled as **Almost Lost**.
+* If the RFM_Segment is 344 then the customer labeled as **Lost Customers**.
+* If the RFM_Segment is 444 then the customer labeled as **Lost Cheap Customers**.
 
 ### How is the customer segmentation using RFM model?
  ![Labeling](https://user-images.githubusercontent.com/109860070/201515113-a7f86a72-58b1-4fa1-884a-83d34cb92143.png)
